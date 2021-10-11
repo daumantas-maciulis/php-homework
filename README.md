@@ -1,4 +1,3 @@
-# Visma assessment task
 
 ## Introduction
 
