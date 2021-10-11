@@ -1,0 +1,21 @@
+version: '3.3'
+services:
+  cli:
+    image: php:8.0-cli
+    working_dir: /app
+    entrypoint: php main.php
+    command: help
+    volumes:
+      - ./:/app
+  phpunit:
+    image: php:8.0-cli
+    working_dir: /app
+    command: bin/phpunit
+    volumes:
+      - ./:/app
+  composer:
+    image: composer:2.0
+    working_dir: /app
+    command: install
+    volumes:
+      - ./:/app

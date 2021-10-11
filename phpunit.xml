@@ -1,0 +1,7 @@
+<phpunit colors="true" failOnRisky="true" cacheResult="false" failOnWarning="true" bootstrap="vendor/autoload.php">
+    <testsuites>
+        <testsuite name="App suite">
+            <directory>test/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
